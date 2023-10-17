@@ -3,9 +3,9 @@
 
 
 
-String.prototype.toJadenCase = function ()  {
+function toJadenCase  (str)  {
 
-    let arr = this.split(' ');
+    let arr = str.split(' ');
     let newArr = []
     let upperStr = ""
 
@@ -18,5 +18,5 @@ String.prototype.toJadenCase = function ()  {
     return newArr.join(" ")
 };
 
-oJadenCase("how can mirrors be real if our eyes aren't real")
+toJadenCase("how can mirrors be real if our eyes aren't real")
 
